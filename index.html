@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Impressive Static Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-purple-500 to-indigo-600 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">BrandName</a>
+            <div class="space-x-6">
+                <a href="#about" class="text-white hover:text-gray-200">About</a>
+                <a href="#services" class="text-white hover:text-gray-200">Services</a>
+                <a href="#contact" class="text-white hover:text-gray-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?nature,water');">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto flex flex-col items-center justify-center h-full text-center text-white fade-in">
+            <h1 class="text-5xl font-extrabold mb-4">Welcome to Our Amazing Website</h1>
+            <p class="text-xl mb-6">Discover stunning landscapes, creative services, and more!</p>
+            <a href="#services" class="bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">Explore More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-indigo-600 mb-6 fade-in">Who We Are</h2>
+            <p class="text-lg text-gray-700 leading-relaxed fade-in">We are a team of passionate individuals who create stunning experiences. Our goal is to bring beauty and innovation to everything we do, whether it's designing websites, capturing breathtaking photos, or offering top-notch services.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-purple-600 mb-12 fade-in">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-2xl transition-shadow duration-300 fade-in">
+                    <img src="https://source.unsplash.com/400x300/?web,design" alt="Web Design" class="mx-auto rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold mb-2">Web Design</h3>
+                    <p class="text-gray-600">Beautiful and responsive websites tailored to your needs.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-2xl transition-shadow duration-300 fade-in">
+                    <img src="https://source.unsplash.com/400x300/?photography,creative" alt="Photography" class="mx-auto rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold mb-2">Photography</h3>
+                    <p class="text-gray-600">Capturing the essence of moments with creativity and precision.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-8 text-center hover:shadow-2xl transition-shadow duration-300 fade-in">
+                    <img src="https://source.unsplash.com/400x300/?development,coding" alt="Development" class="mx-auto rounded-lg mb-6">
+                    <h3 class="text-2xl font-semibold mb-2">App Development</h3>
+                    <p class="text-gray-600">Creating innovative and intuitive apps for various platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 fade-in">Get In Touch</h2>
+            <p class="text-lg mb-6 fade-in">We would love to hear from you! Whether you have a question, need a service, or just want to say hello, reach out to us!</p>
+            <a href="mailto:info@example.com" class="bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 BrandName. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
